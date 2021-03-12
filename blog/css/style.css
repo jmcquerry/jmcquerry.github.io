@@ -1,0 +1,343 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* Imported Typfaces */
+@font-face {
+    
+    font-family: josefinslab;
+    src: url(../fonts/josefinslab-regular.ttf);
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:montserrat;
+    src: url(../fonts/montserrat-regular.ttf);
+    font-weight:normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family:lato;
+    src: url(../fonts/lato-regular.ttf);
+    font-weight:normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family:opensans;
+    src: url(../fonts/opensans-regular.ttf);
+    font-weight:normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family:roboto;
+    src: url(../fonts/roboto-regular.ttf);
+    font-weight:normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family:rozhaone;
+    src: url(../fonts/rozhaone-regular.ttf);
+    font-weight:normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family:ultra;
+    src: url(../fonts/ultra-regular.ttf);
+    font-weight:normal;
+    font-style: normal;
+}
+    html {
+    font-family: "montserrat", sans-serif;
+}
+    /* Typography Styles */
+}
+h1 {
+    font-family: "josefinslab", serif;
+    letter-spacing: 0.125rem;
+    font-size: 3.75rem;
+ }
+h2 {
+    font-family: "josefinslab", serif;
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem;
+}
+h3 {
+    font-family: "josefinslab", serif;
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem;
+}
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 3rem;
+    width: 100%;
+}
+li a {
+    display: inline;
+    float: left;
+    text-align: center;
+    color: navy;
+    padding: 0rem 1rem 0rem 1rem;
+    text-decoration: none;
+} 
+/* Level 1 Heading. */
+     
+     .highlight {background-color: brown;
+                color: beige;
+                font-weight: bold;
+                padding-bottom: 0.125em;
+                padding-left: 0.125em;
+                padding-right: 0.125em;
+                padding-top: 0.11em;
+                border-radius: 15px 15px 20px;}
+        
+ h1 {transform: rotate(-5deg);
+    text-align: center;}
+     
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+
+/* Layout */
+
+main {
+    overflow:auto;
+    min-width:45rem;
+    
+}
+
+section {
+    float: left;
+    min-width: 30rem;
+    width:30%;
+}
+
+figure {
+    width:100%;
+    margin:1 10% 0 0;
+    float:left;
+}
+
+figure img {
+    width:100%;
+    max-width:25rem;
+}
+
+figcaption {
+    margin:.375rem 0;
+}
+
+.long-list {
+    margin-top:0;
+}
+
+nav {
+    float: left;
+    width:11.25rem;
+}
+body {
+   align-content: center;
+}
+
+footer {
+    clear: both;
+    margin-top:1.5rem;
+}
+
+section, aside, nav, footer {
+  padding: .5rem;
+}
+
+/* Header and Footer */
+
+header, footer {
+ 
+  border-bottom: .125rem solid #afbac1;
+  border-width: medium;
+}
+nav{
+    float: left;
+    text-align: left;
+  
+    border-bottom: .15rem solid #afbac1;
+    border-bottom-width:inherit
+    border-top-width: inherit;
+    width: 100%;
+    font-family: 'lato';
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    word-spacing: 4rem;
+    padding-left: 4rem;
+    
+}
+
+nav a{
+    text-decoration: none;
+}
+nav ul {
+   
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.subsection{display: inline-block;}
+
+.row{
+    display: flex;
+    max-width: 80%;
+    flex: 80%;
+    padding: .25rem;
+    float: left;
+    width: 100%;}
+
+.column{
+    flex: 30%;
+    float:left;
+    width:90%;
+    padding: 2px;}
+.main-section{
+    width: 63%;
+    font-size: 1.75rem;
+    text-align: left;
+    float: left;
+}
+.article-image {
+    width: 30%;
+    height: inherit;
+    padding: 0;
+    
+}
+.column1{
+    float: left;
+    width: 70%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button{
+    background-color: navy;
+  color: white;
+  border: 0.22em solid black;
+    padding: 0.22em;
+    border-radius: 0.5em;
+    font-family: "ultra";
+    font-weight: bolder;
+    font-size: x-large; 
+}
+aside {
+    float: right;
+    text-align: inherit;
+    width: 20%;
+    border-left: 2px;
+    border-color: black;
+    border-left-style: solid;
+    padding-left: 1rem;}
+aside img{ 
+    width: 80%;
+}
+
+.expand{
+    text-decoration: none; 
+}
+article {
+    float: left;
+    width: 45%;
+    min-width: 40rem;
+    width:50%;
+}
+.main-section {
+    font-size: .75rem;
+    text-align: left;
+    
+    float: left;
+}
+.article-image {
+    width: 70%;
+    height: inherit;
+    padding: 0;
+    max-width:15rem;
+}
+.subsection {
+    display: flex;
+    flex: 80%;
+    padding: 1rem;
+    float: left;
+    width: 100%;
+}
+.expand {
+    text-decoration: none;
+    font-size: 30%;
+    padding: none;
+}
+footer {
+    clear: both;
+    margin-top:1.5rem auto;
+    border-top: 2px black solid;
+    width: 90%;
+    text-align: center;
+    overflow: auto;
+}
